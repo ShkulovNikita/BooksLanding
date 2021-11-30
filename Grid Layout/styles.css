@@ -1,0 +1,5 @@
+@import url(styles-general.css);
+@import url(grid-styles.css);
+@import url(styles-small-screens.css) (max-width: 870px) and (min-width: 769px);
+@import url(styles-tablets.css) (max-width: 769px) and (min-width: 481px);
+@import url(styles-mobile.css) (max-width: 481px) and (min-width: 320px);

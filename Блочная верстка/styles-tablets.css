@@ -1,0 +1,129 @@
+body > div {
+	min-width: 768px;
+}
+
+#header {
+	font-size: 20px;
+}
+
+#header input {
+	font-size: 16px;
+	margin-left: 0px;
+}
+
+#sign-in {
+	width: 150px;
+}
+
+#menu {
+	margin: 12px 110px;
+	width: 550px;
+}
+
+ul li {
+	margin-right: 6%;
+}
+
+#logo-image {
+	margin-left: 30px;
+}
+
+#main-picture {
+	float: none;
+	margin: 0 auto;
+	display: block;
+	width: 70%;
+}
+
+#main-part-text {
+	float: none;
+	margin: 10px auto;
+	font-size: 24px;
+	width: 70%;
+}
+
+#main-part-text input {
+	font-size: 20px;
+}
+
+input[type="text"] {
+	width: 480px;
+}
+
+input[type="submit"] {
+	width: 480px;
+	height: 60px;
+}
+
+#main-part-text h1 {
+	font-size: 38px;
+}
+
+#main-part-text h1, p {
+	text-align: center;
+}
+
+#main-part-text input {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main-part-content {
+	margin-top: 30px;
+	min-width: 768px;
+	margin-bottom: 10px;
+}
+
+#header + div {
+	height: auto;
+}
+
+.review, .advantage p {
+	font-size: 20px;
+}
+
+.reviews-row > .review {
+	width: 40%;
+	margin: 10px 2%;
+	min-width: 280px;
+}
+
+.advantages-row > .advantage {
+	width: 40%;
+	margin: 10px 2%;
+	min-width: 300px;
+	max-height: 250px;
+}
+
+.advantage-title {
+	margin-top: -2px;
+}
+
+#prices-table {
+	width: 90%;
+	font-size: 20px;
+}
+
+#bronze {
+	width: 150px;
+}
+
+#silver {
+	width: 180px;
+}
+
+#gold {
+	width: 150px;
+}
+
+#join > form {
+	width: 480px;
+}
+
+#join input {
+	font-size: 20px;
+}
+
+#footer-links {
+	width: 83%;
+}

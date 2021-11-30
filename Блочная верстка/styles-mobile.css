@@ -1,0 +1,185 @@
+body > div {
+	min-width: 481px;
+}
+
+#header {
+	min-width: 481px;
+}
+
+#menu {
+	display: none;
+	width: 0px;
+	margin: 0px;
+}
+
+#menu-icon {
+	width: 40px;
+	display: block;
+	float: left;
+	margin-left: 30px;
+}
+
+#header input {
+	font-size: 16px;
+	margin-left: 0px;
+}
+
+#logo-image {
+	margin-left: 30px;
+}
+
+#sign-in {
+	width: 100px;
+	float: right;
+	margin-right: 20px;
+}
+
+#header input[type="submit"] {
+	margin-left: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#main-picture {
+	float: none;
+	margin: 0 auto;
+	display: block;
+	width: 70%;
+}
+
+#main-part-text {
+	float: none;
+	margin: 10px auto;
+	font-size: 24px;
+	width: 70%;
+}
+
+#main-part-text input {
+	font-size: 20px;
+}
+
+input[type="text"] {
+	width: 360px;
+}
+
+input[type="submit"] {
+	width: 360px;
+	height: 60px;
+}
+
+#main-part-text h1 {
+	font-size: 38px;
+}
+
+#main-part-text h1, p {
+	text-align: center;
+}
+
+#main-part-text input {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main-part-content {
+	margin-top: 30px;
+	min-width: 481px;
+	margin-bottom: 10px;
+}
+
+#header + div {
+	height: auto;
+}
+
+.advantages-row > .advantage {
+	font-size: 22px;
+	width: 90%;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	float: none;
+}
+
+.advantage-text {
+	font-size: 20px;
+}
+
+.reviews-row > .review {
+	font-size: 22px;
+	width: 90%;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	float: none;
+}
+
+.review-text {
+	font-size: 20px;
+}
+
+#prices-table {
+	display: none;
+}
+
+#prices-table-mobile {
+	display: block;
+	width: 90%;
+	font-size: 20px;
+}
+
+#prices-table-mobile tr:nth-child(3) td {
+	border-bottom: 1px solid #dedede;
+}
+
+#prices-table-mobile tr:nth-child(4) td {
+	padding-top: 20px;
+}
+
+#prices-table-mobile tr:nth-child(6) td {
+	border-bottom: 1px solid #dedede;
+}
+
+#prices-table-mobile tr:nth-child(7) td {
+	padding-top: 20px;
+}
+
+#bronze {
+	font-weight: 700;
+	width: 160px;
+}
+
+#silver {
+	font-weight: 700;
+	width: 180px;
+}
+
+#gold {
+	font-weight: 700;
+	width: 150px;
+}
+
+#join h1 {
+	display: block;
+	width: 290px;
+}
+
+#join form {
+	width: 360px;
+}
+
+#footer-links {
+	margin-left: 20px;
+	display: block;
+	min-width: 240px;
+}
+
+#footer-links ul {
+	width: 210px;
+}
+
+#footer-links ul li {
+	margin-right: 0px;
+	width: 200px;
+	display: block;
+}

@@ -1,0 +1,21 @@
+body > div {
+	min-width: 870px;
+}
+
+#reviews-row {
+	height: 400px;
+}
+
+#advantages-row {
+	height: 400px;
+}
+
+.review {
+	width: 45%;
+	min-width: 270px;
+	flex: 0 1 auto;
+}
+
+#join > h1 {
+	width: 290px;
+}

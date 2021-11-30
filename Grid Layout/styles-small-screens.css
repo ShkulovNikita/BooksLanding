@@ -1,0 +1,14 @@
+body > div {
+	min-width: 870px;
+}
+
+#reviews-row {
+	width: 88%;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, auto);
+	gap: 25px;
+}
+
+.review {
+	min-width: 210px;
+}

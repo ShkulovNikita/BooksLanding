@@ -1,0 +1,154 @@
+body {
+	grid-template-areas: "header"
+						 "main-part"
+						 "advantages"
+						 "reviews"
+						 "prices"
+						 "join"
+						 "footer";
+	grid-template-columns: 1fr;
+	grid-template-rows: 80px 650px auto auto 790px 300px 90px;
+}
+
+#header-content {
+	width: 100%;
+	justify-content: center;
+	gap: 13%;
+}
+
+#sign-in {
+	width: 100px;
+}
+
+#menu {
+	display: none;
+}
+
+#menu-icon {
+	display: block;
+	height: 40px;
+	grid-area: 1 / 1 / 4 / 2;
+}
+
+#logo-image {
+	grid-area: 1 / 2 / 4 / 3;
+}
+
+#main-part-content {
+	width: auto;
+	grid-template-columns: auto;
+	grid-template-rows: repeat(2, auto);
+	justify-content: center;
+	grid-column-gap: 0px;
+	grid-row-gap: 20px;
+	text-align: center;
+}
+
+#main-part-content form {
+	margin: 0 auto;
+	width: 300px;
+}
+
+#main-picture {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main-part-text {
+	width: 92%;
+	margin: 0 auto;
+}
+
+input[type="text"] {
+	width: 300px;
+}
+
+input[type="submit"] {
+	width: 300px;
+	height: 50px;
+}
+
+#main-part-text p {
+	font-size: 20px;
+}
+
+#advantages-row {
+	grid: repeat(6, auto) / repeat(1, 1fr);
+	grid-column-gap: 15px;
+	grid-row-gap: 15px;
+}
+
+.advantage {
+	min-width: 200px;
+}
+
+#advantages > h1 {
+	margin: 20px auto;
+	width: 310px;
+	font-size: 25px;
+}
+
+#reviews-row {
+	width: 88%;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(6, auto);
+	gap: 15px;
+}
+
+.review {
+	min-width: 210px;
+}
+
+#reviews > h1 {
+	margin: 20px auto;
+	width: 280px;
+	font-size: 25px;
+}
+
+#prices-table {
+	display: none;
+}
+
+#prices-table-mobile {
+	display: block;
+}
+
+#bronze, #gold, #silver {
+	font-weight: 700;
+}
+
+#prices-table-mobile tr:nth-child(3) td {
+	border-bottom: 1px solid #dedede;
+}
+
+#prices-table-mobile tr:nth-child(4) td {
+	padding-top: 20px;
+}
+
+#prices-table-mobile tr:nth-child(6) td {
+	border-bottom: 1px solid #dedede;
+}
+
+#prices-table-mobile tr:nth-child(7) td {
+	padding-top: 20px;
+}
+
+#prices > h1 {
+	width: 260px;
+}
+
+#join > h1 {
+	width: 280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#footer {
+	width: 100%;
+	min-width: 200px;
+}
+
+#footer ul {
+	width: 200px;
+}

@@ -1,0 +1,8 @@
+body > div {
+	min-width: 870px;
+}
+
+.reviews-row > .review {
+	width: 40%;
+	margin: 10px 5%;
+}

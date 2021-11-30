@@ -1,0 +1,303 @@
+/*grid-container*/
+
+.grid-container {
+	display: grid;
+}
+
+/*grid-template-columns*/
+
+#reviews-row {
+	width: 80%;
+	margin: 0 auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto;
+}
+
+.review {
+	min-width: 220px;
+}
+
+#header-content {
+	width: 90%;
+	margin: 0 auto;
+	grid-template-columns: 60px auto 100px;
+	grid-template-rows: auto;
+}
+
+#main-part-content {
+	grid-template-columns: 400px 400px;
+	grid-template-rows: auto;
+}
+
+/*функция repeat и свойство grid*/
+
+#main-part-content {
+	grid-template-columns: repeat(2, 400px);
+}
+
+#reviews-row {
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, auto);
+}
+
+#header-content {
+	grid: auto / 60px auto 100px;
+}
+
+/*размеры строк и столбцов*/
+
+#advantages-row {
+	width: 90%;
+	margin: 0 auto;
+	grid: repeat(2, auto) / repeat(3, 1fr);
+}
+
+.advantage {
+	min-width: 240px;
+}
+
+/*отступы между столбцами и строками*/
+
+#advantages-row {
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+#reviews-row {
+	gap: 20px;
+}
+
+#main-part-content {
+	grid-column-gap: 20px;
+}
+
+#header-content {
+	grid-column-gap: 50px;
+}
+
+/*позиционирование элементов*/
+
+
+#header-content {
+	grid: repeat(3, auto) / 60px auto 100px;
+}
+
+#logo-image {
+	grid-row-start: 1;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+#menu {
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+#sign-in {
+	grid-row-start: 1;
+	grid-row-end: 4;
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+
+#logo-image {
+	grid-area: 1 / 1 / 4 / 2;
+}
+
+#menu {
+	grid-area: 2 / 2 / 3 / 3;
+}
+
+#sign-in {
+	grid-area: 1 / 3 / 4 / 4;
+}
+
+.advantage {
+	grid: 50px auto / 50px auto;
+	grid-column-gap: 20px;
+}
+
+.advantage-text {
+	grid-area: 2 / 1 / 3 / 3;
+}
+
+.advantage-title {
+	margin: auto 0;
+}
+
+/*
+.review {
+	grid: auto 40px / 40px auto;
+	gap: 20px;
+}
+*/
+/*
+.review-text {
+	grid-area: 1 / 1 / 2 / 3 ;
+}
+*/
+
+/*наложение элементов*/
+
+#header {
+	z-index: 50;
+}
+
+.advantages {
+	grid: repeat(3, auto) / repeat(3, 1fr);
+}
+
+
+.advantage {
+	z-index: 2;
+}
+
+/*#special-item {
+	background-color: #f0fff4;
+	grid-area: 1 / 1 / 3 / 4;
+	z-index: 1;
+}*/
+
+/*
+.advantage:first-child {
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+.advantage:nth-child(2) {
+	grid-area: 1 / 2 / 2 / 3;
+}
+
+.advantage:nth-child(3) {
+	grid-area: 1 / 3 / 2 / 4;
+}*/
+
+/*направление и порядок элементов*/
+/*
+#reviews-row {
+	grid-auto-flow: column;
+}
+*/
+/*
+#first-item {
+	order: -1;
+}
+
+#last-item {
+	order: 1;
+}
+*/
+
+/*именованные grid-линии*/
+
+/*
+.review {
+	grid-template-columns: [cols-start] 40px 1fr [cols-end];
+	grid-template-rows: [review-start] 1fr 40px;
+	gap: 20px;
+}
+
+.review-text { 
+	grid-column-start: cols-start;
+	grid-column-end: cols-end;
+	grid-row-start: review-start;
+}
+
+.avatar {
+	grid-column: cols-start / medium-line;
+	grid-row: author-start;
+}
+
+.review-author-name {
+	grid-column: medium-line / cols-end;
+	grid-row: author-start;
+}*/
+
+/*области грида*/
+
+.review {
+	grid-template-areas: "text text"
+						 "avatar name";
+	grid-template-columns: 40px auto;
+	grid-template-rows: auto 40px;
+	gap: 20px;
+}
+
+.review-text {
+	grid-area: text;
+}
+
+.avatar {
+	grid-area: avatar;
+}
+
+.review-author-name {
+	grid-area: name;
+}
+
+body {
+	grid-template-areas: "header"
+						 "main-part"
+						 "advantages"
+						 "reviews"
+						 "prices"
+						 "join"
+						 "footer";
+	grid-template-columns: 1fr;
+	grid-template-rows: 80px 350px auto auto 420px 300px 40px;
+}
+
+#header {
+	grid-area: header;
+}
+
+#main-part {
+	grid-area: main-part;
+}
+
+#header+div {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+#advantages {
+	grid-area: advantages;
+}
+
+#reviews {
+	grid-area: reviews;
+}
+
+#prices {
+	grid-area: prices;
+}
+
+
+#join {
+	grid-area: join;
+}
+
+#footer {
+	grid-area: footer;
+}
+
+#main-part-content {
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 820px;
+}
+
+#join form {
+	margin: 0 auto;
+}
+
+#prices-table-mobile {
+	display: none;
+}
+
+#menu-icon {
+	display: none;
+}

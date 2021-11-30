@@ -1,0 +1,123 @@
+body {
+	grid-template-areas: "header"
+						 "main-part"
+						 "advantages"
+						 "reviews"
+						 "prices"
+						 "join"
+						 "footer";
+	grid-template-columns: 1fr;
+	grid-template-rows: 80px 650px auto auto 740px 300px 40px;
+}
+
+#menu {
+	display: none;
+}
+
+#menu-icon {
+	display: block;
+	height: 40px;
+	grid-area: 1 / 1 / 4 / 2;
+}
+
+#logo-image {
+	grid-area: 1 / 2 / 4 / 3;
+}
+
+#main-part-content {
+	width: auto;
+	grid-template-columns: auto;
+	grid-template-rows: repeat(2, auto);
+	justify-content: center;
+	grid-column-gap: 0px;
+	grid-row-gap: 20px;
+	text-align: center;
+}
+
+#main-part-content form {
+	margin: 0 auto;
+	width: 370px;
+}
+
+input[type="text"] {
+	width: 370px;
+}
+
+input[type="submit"] {
+	width: 370px;
+	height: 50px;
+}
+
+#main-part-text p {
+	font-size: 20px;
+}
+
+#advantages-row {
+	grid: repeat(3, auto) / repeat(2, 1fr);
+	grid-column-gap: 15px;
+	grid-row-gap: 15px;
+}
+
+.advantage {
+	min-width: 200px;
+}
+
+#reviews-row {
+	width: 88%;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, auto);
+	gap: 15px;
+}
+
+.review {
+	min-width: 210px;
+}
+
+#prices-table {
+	display: none;
+}
+
+#prices-table-mobile {
+	display: block;
+}
+
+#bronze, #gold, #silver {
+	font-weight: 700;
+}
+
+#prices-table-mobile tr:nth-child(3) td {
+	border-bottom: 1px solid #dedede;
+}
+
+#prices-table-mobile tr:nth-child(4) td {
+	padding-top: 20px;
+}
+
+#prices-table-mobile tr:nth-child(6) td {
+	border-bottom: 1px solid #dedede;
+}
+
+#prices-table-mobile tr:nth-child(7) td {
+	padding-top: 20px;
+}
+
+#prices > h1 {
+	width: 260px;
+}
+
+#footer {
+	width: auto;
+	min-width: 200px;
+}
+
+#footer ul {
+	text-align: center;
+	width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#footer ul li {
+	margin-right: 3%;
+	margin-left: 3%;
+}

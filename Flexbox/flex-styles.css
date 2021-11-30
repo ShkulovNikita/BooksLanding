@@ -1,0 +1,197 @@
+/*flex-классы*/
+
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+.flex-start {
+	justify-content: flex-start;
+}
+
+.row {
+	flex-direction: row;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.row-wrap {
+	flex-flow: row wrap;
+}
+
+.row-column {
+	flex-flow: column wrap;
+}
+
+#advantages-row {
+	width: 90%;
+}
+
+#reviews-row {
+	width: 80%;
+}
+
+#header-content {
+	width: 90%;
+	min-width: 580px;
+}
+
+#menu {
+	width: 500px;
+}
+
+.advantage {
+	width: 30%;
+	min-width: 240px;
+}
+
+.review {
+	width: 30%;
+	min-width: 220px;
+}
+
+.group1 {
+	order: 1;
+}
+
+.group2 {
+	order: 2;
+}
+
+.group3 {
+	order: 3;
+}
+
+/*---------------*/
+
+/*align-items*/
+
+.advantage-header {
+	height: 50px;
+	align-items: center;
+}
+
+.review-author {
+	height: 40px;
+	align-items: center;
+}
+
+/*align-content*/
+
+#advantages-row {
+	height: 320px;
+	align-content: space-between;
+}
+
+#reviews-row {
+	height: 320px;
+	align-content: space-between;
+}
+
+/*flex-basis*/
+
+.advantage {
+	flex-basis: auto;
+	flex-shrink: 1;
+	flex-grow: 0;
+}
+
+.review {
+	width: 30%;
+	min-width: 270px;
+	flex: 0 1 auto;
+}
+
+#sign-in {
+	flex-basis: 100px;
+}
+
+#logo-image {
+	margin-right: 20px;
+}
+
+/*многоколоночный дизайн*/
+
+.flex-center {
+	justify-content: center;
+}
+
+#main-picture {
+	margin-right: 20px;
+}
+
+#main-part-content {
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+#header-content {
+	align-items: center;
+	margin: 0 auto;
+}
+
+#advantages-row {
+	margin: 0 auto;
+}
+
+#reviews-row {
+	margin: 0 auto;
+}
+
+.review-text {
+	height: 20px;
+}
+
+.review {
+	margin: 1%;
+}
+
+#footer ul {
+	width: 540px;
+}
+
+.advantage-title {
+	margin-left: 15px;
+}
+
+.review-author-name {
+	margin-left: 15px;
+}
+
+@media screen and (max-width: 810px) and (min-width: 530px) {
+	#advantages-row {
+		height: 550px;
+	}
+}
+
+@media screen and (max-width: 530px) {
+	#advantages-row {
+		height: 1000px;
+	}
+}
+
+@media screen and (max-width: 1090px) and (min-width: 720px) {
+	#reviews-row {
+		height: 480px;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	#reviews-row {
+		height: 980px;
+	}
+}
+
+#menu-icon {
+	display: none;
+}
+
+#prices-table-mobile {
+	display: none;
+}

@@ -1,0 +1,162 @@
+body > div {
+	min-width: 481px;
+}
+
+#header-content {
+	width: 100%;
+	justify-content: space-around;
+	min-width: 481px;
+}
+
+#menu {
+	display: none;
+}
+
+#menu-icon {
+	width: 40px;
+	display: block;
+}
+
+#header input {
+	font-size: 16px;
+}
+
+#sign-in {
+	width: 100px;
+}
+
+#main-picture {
+	display: block;
+	width: 70%;
+	margin-right: 0px;
+}
+
+#main-part-text {
+	font-size: 24px;
+	width: 70%;
+}
+
+#main-part-text input {
+	font-size: 20px;
+}
+
+input[type="text"] {
+	width: 360px;
+}
+
+input[type="submit"] {
+	width: 360px;
+	height: 60px;
+}
+
+#main-part-text h1 {
+	font-size: 38px;
+}
+
+#main-part-text h1	{
+	text-align: center;
+}
+
+#main-part-text p {
+	text-align: center;
+}
+
+#main-part-text input {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.review, .advantage p {
+	font-size: 20px;
+}
+
+.review {
+	width: 85%;
+	min-width: 280px;
+}
+
+.advantage {
+	width: 90%;
+	min-width: 300px;
+	max-height: 250px;
+}
+
+#reviews-row {
+	height: 950px;
+	justify-content: center;
+	align-content: space-between;
+}
+
+#advantages-row {
+	height: 1100px;
+	justify-content: center;
+	align-content: space-between;
+}
+
+#advantages h1 {
+	width: 390px;
+}
+
+#prices-table {
+	display: none;
+}
+
+#prices-table-mobile {
+	display: block;
+	text-align: center;
+}
+
+#prices-table-mobile tr:nth-child(3) td {
+	border-bottom: 1px solid #dedede;
+}
+
+#prices-table-mobile tr:nth-child(4) td {
+	padding-top: 20px;
+}
+
+#prices-table-mobile tr:nth-child(6) td {
+	border-bottom: 1px solid #dedede;
+}
+
+#prices-table-mobile tr:nth-child(7) td {
+	padding-top: 20px;
+}
+
+#bronze {
+	font-weight: 700;
+	width: 160px;
+}
+
+#silver {
+	font-weight: 700;
+	width: 180px;
+}
+
+#gold {
+	font-weight: 700;
+	width: 150px;
+}
+
+#join h1 {
+	display: block;
+	width: 290px;
+}
+
+#join form {
+	width: 360px;
+}
+
+#footer {
+	min-width: 481px;
+}
+
+#footer ul {
+	margin-left: 20px;
+	display: block;
+	width: 210px;
+}
+
+#footer ul li {
+	width: 200px;
+	display: block;
+}

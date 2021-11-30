@@ -1,0 +1,579 @@
+/*общее*/
+
+* {
+	box-sizing: border-box;
+}
+
+html, body, div, h1, p, a, img, dl, dt, dd, ol, ul, li, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+body {
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+	font-family: Nunito, Arial, Verdana, sans-serif;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+ul {
+	padding: 4px;
+}
+
+ul li {
+	display: inline;
+	margin-right: 2%;
+	padding: 3px;
+}
+
+body > div > h1 {
+	display: block;
+	margin: 35px auto;
+}
+
+#advantages > h1 {
+	width: 430px;
+}
+
+#reviews > h1 {
+	width: 360px;
+}
+
+#prices > h1 {
+	width: 270px;
+}
+
+#join > h1 {
+	width: 310px;
+}
+
+body > div {
+	padding-top: 5px;
+	padding-bottom: 30px;
+}
+
+body > div:last-child {
+	padding-bottom: 5px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+::selection {
+	color: white;
+	background-color: #50cc64;
+}
+
+a:link {
+	color: black;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #437bc4;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #50cc64;
+	text-decoration: underline;
+}
+
+a:active {
+	color: yellow;
+	text-decoration: underline;
+}
+
+#menu a {
+	color: white;
+	text-decoration: none;
+}
+
+@font-face {
+	font-family: 'Nunito';
+	src: url('fonts/Nunito-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Nunito';
+	src: url('fonts/Nunito-Italic.ttf');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Nunito';
+	src: url('fonts/Nunito-Bold.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Nunito';
+	src: url('fonts/Nunito-BoldItalic.ttf');
+	font-weight: bold;
+	font-style: italic;
+}
+
+/*блоки input*/
+
+input {
+	display: block;
+	text-align: center;
+	border-radius: 4px;
+}
+
+input.long-button {
+	border: none;
+	background-color: #ffd663;
+	width: 312px;
+	font-weight: 600;
+	margin-top: 10px;
+	height: 48px;
+	background-image: linear-gradient(left, #ffdf8a, #ffca3d);
+	background-image: -o-linear-gradient(left, #ffdf8a, #ffca3d);
+	background-image: -moz-linear-gradient(left, #ffdf8a, #ffca3d);
+	background-image: -webkit-linear-gradient(left, #ffdf8a, #ffca3d);
+}
+
+input.long-button:hover {
+	background-image: linear-gradient(left, #ffca3d, #ffdf8a);
+	background-image: -o-linear-gradient(left, #ffca3d, #ffdf8a);
+	background-image: -moz-linear-gradient(left, #ffca3d, #ffdf8a);
+	background-image: -webkit-linear-gradient(left, #ffca3d, #ffdf8a);
+}
+
+input.long-button:active {
+	background-image: radial-gradient(ellipse, #ffe7a8, #ffca3d);
+}
+
+
+input[type="text"] {
+	padding: 14px 30px;
+	width: 312px;
+}
+
+input[type="text"]:invalid {
+	border: 2px solid red;
+}
+
+/*хэдер*/
+
+#header+div {
+	margin-top: 80px;
+}
+
+#header {
+	height: 80px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	border-bottom: 1px solid #ffd663;
+	z-index: 1;
+	background-color: rgb(80, 204, 100);
+	color: white;
+}
+
+#header input[type="submit"] {
+	background-color: #ffd663;
+	width: 100px;
+	height: 40px;
+	border: none;
+	font-weight: 600;
+	outline-color: white;
+	outline-offset: 1px;
+	outline-style: solid;
+}
+
+#sign-in {
+	width: 200px;
+}
+
+#header ul {
+	padding-top: 0;
+}
+
+#logo-image {
+	width: 60px;
+}
+
+#header-content {
+	padding-top: 13px;
+}
+
+/*основной раздел*/
+
+#main-part > * {
+	color: white;
+}
+
+#header+div {
+	background-color: #50cc64;
+}
+
+#main-part~.odd-row {
+	background-color: white;
+}
+
+#main-part~.even-row {
+	background-color: #f0fff4;
+}
+
+#main-part p {
+	margin-bottom: 20px;
+}
+
+#main-part p::selection {
+	color: black;
+	background-color: white;
+}
+
+#main-part h1 {
+	font-size: 34px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-transform: capitalize;
+}
+
+img[src*="books"] {
+	width: 400px;
+}
+
+#main-picture {
+	box-sizing: border-box;
+	width: 400px;
+}
+
+#main-part-text {
+	width: 400px;
+}
+
+/*преимущества*/
+
+.advantage .advantage-title {
+	width: 60%;
+	font-weight: 600;
+	color: black;
+}
+
+#advantages {
+	padding-bottom: 90px;
+}
+
+#advantages-row > .advantage {
+	color: gray;
+	max-height: 180px;
+	box-sizing: border-box;
+}
+
+.advantage-text {
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+.advantage {
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 5px 1px #c7c7c7;
+}
+
+img[src*="advantage"] {
+	width: 50px;
+	height: 50px;
+}
+
+/*отзывы*/
+
+.review-author-name {
+}
+
+.review-author {
+	margin-top: 17px;
+}
+
+#reviews-row > .review {
+	background-color: white;
+	box-sizing: border-box;
+}
+
+.review > p {
+	font-style: italic;
+}
+
+.review-author-name p:first-child {
+	font-weight: 600;
+}
+
+img[src*="avatar"] {
+	width: 40px;
+	height: 40px;
+}
+
+.reader-name, .reader-surname {
+	font-style: normal;
+}
+
+.reader-name {
+	font-size: 90%;
+}
+
+.review {
+	color: black;
+	font-style: italic;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 2px 5px 1px #c7c7c7;
+}
+
+.review .review-text {
+	height: 40px;
+	overflow: auto;
+}
+
+#reviews {
+	padding-bottom: 90px;
+}
+
+/*цены*/
+
+tr:first-child {
+	font-size: 120%;
+	font-weight: 600;
+}
+
+td:first-child {
+	border: none;
+}
+
+td:last-child {
+	border: none;
+}
+
+table td {
+	text-align: center;
+	border-left: 1px solid #dedede;
+	border-right: 1px solid #dedede;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+table tr:first-child > td {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+table tr:last-child > td {
+	padding-bottom: 30px;
+}
+
+table div {
+	padding: 10px;
+	border-radius: 25px 25px;
+	margin: 0 auto;
+}
+
+table {
+	border-collapse: collapse;
+	box-shadow: 0px 4px 5px 1px #c7c7c7;
+	border-radius: 10px;
+	border: none;
+	table-layout: fixed;
+	width: 65%;
+	margin: 0 auto;
+}
+
+#prices {
+	padding-bottom: 80px;
+}
+
+#gold {
+	width: 115px;
+	background-color: #ffd700;
+}
+
+#bronze {
+	width: 130px;
+	background-color: #cd7f32;
+}
+
+#silver {
+	width: 140px;
+	background-color: #c0c0c0;
+}
+
+/*блок join*/
+
+#join > form {
+	width: 340px;
+	display: block;
+	margin: 0 auto;
+}
+
+#join {
+	padding-bottom: 70px;
+}
+
+/*футер*/
+
+#footer * {
+	font-size: small;
+}
+
+#footer {
+	display: block;
+	width: 40%;
+	min-width: 550px;
+	margin: 0 auto;
+}
+
+/*трансформации*/
+
+#logo-image:hover {
+	transform: rotate(45deg) scale(1.1);
+}
+
+#prices table div:hover {
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+}
+
+#prices table div#bronze:hover {
+	animation-name: changingSizeAnimation, shiningAnimationBronze;
+}
+
+#prices table div#silver:hover {
+	animation-name: changingSizeAnimation, shiningAnimationSilver;
+}
+
+#prices table div#gold:hover {
+	animation-name: changingSizeAnimation, shiningAnimationGold;
+}
+
+/*переходы*/
+
+#logo-image {
+	transition-property: transform;
+	transition-duration: 2s;
+}
+
+/*анимации*/
+
+@keyframes changingSizeAnimation {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.2);
+	}
+}
+
+@keyframes shiningAnimationBronze {
+	from {
+		background-image: radial-gradient(5% 50%, circle, #e6a96c, #cd7f32);
+		background-image: -o-radial-gradient(5% 50%, circle, #e6a96c, #cd7f32);
+		background-image: -moz-radial-gradient(5% 50%, circle, #e6a96c, #cd7f32);
+		background-image: -webkit-radial-gradient(5% 50%, circle, #e6a96c, #cd7f32);
+	}
+	25% {
+		background-image: radial-gradient(25% 50%, circle, #e6a96c, #cd7f32);
+		background-image: -o-radial-gradient(25% 50%, circle, #e6a96c, #cd7f32);
+		background-image: -moz-radial-gradient(25% 50%, circle, #e6a96c, #cd7f32);
+		background-image: -webkit-radial-gradient(25% 50%, circle, #e6a96c, #cd7f32);
+	}
+	50% {
+		background-image: radial-gradient(50% 50%, circle, #e6a96c, #cd7f32);
+		background-image: -o-radial-gradient(50% 50%, circle, #e6a96c, #cd7f32);
+		background-image: -moz-radial-gradient(50% 50%, circle, #e6a96c, #cd7f32);
+		background-image: -webkit-radial-gradient(50% 50%, circle, #e6a96c, #cd7f32);
+	}
+	75% {
+		background-image: radial-gradient(75% 50%, circle, #e6a96c, #cd7f32);
+		background-image: -o-radial-gradient(75% 50%, circle, #e6a96c, #cd7f32);
+		background-image: -moz-radial-gradient(75% 50%, circle, #e6a96c, #cd7f32);
+		background-image: -webkit-radial-gradient(75% 50%, circle, #e6a96c, #cd7f32);
+	}
+	to {
+		background-image: radial-gradient(95% 50%, circle, #e6a96c, #cd7f32);
+		background-image: -o-radial-gradient(95% 50%, circle, #e6a96c, #cd7f32);
+		background-image: -moz-radial-gradient(95% 50%, circle, #e6a96c, #cd7f32);
+		background-image: -webkit-radial-gradient(95% 50%, circle, #e6a96c, #cd7f32);
+	}
+}
+
+@keyframes shiningAnimationSilver {
+	from {
+		background-image: radial-gradient(5% 50%, circle farthes, #e3e3e3, #c0c0c0);
+		background-image: -o-radial-gradient(5% 50%, circle farthes, #e3e3e3, #c0c0c0);
+		background-image: -moz-radial-gradient(5% 50%, circle farthes, #e3e3e3, #c0c0c0);
+		background-image: -webkit-radial-gradient(5% 50%, circle farthes, #e3e3e3, #c0c0c0);
+	}
+	25% {
+		background-image: radial-gradient(25% 50%, circle, #e3e3e3, #c0c0c0);
+		background-image: -o-radial-gradient(25% 50%, circle, #e3e3e3, #c0c0c0);
+		background-image: -moz-radial-gradient(25% 50%, circle, #e3e3e3, #c0c0c0);
+		background-image: -webkit-radial-gradient(25% 50%, circle, #e3e3e3, #c0c0c0);
+	}
+	50% {
+		background-image: radial-gradient(50% 50%, circle, #e3e3e3, #c0c0c0);
+		background-image: -o-radial-gradient(50% 50%, circle, #e3e3e3, #c0c0c0);
+		background-image: -moz-radial-gradient(50% 50%, circle, #e3e3e3, #c0c0c0);
+		background-image: -webkit-radial-gradient(50% 50%, circle, #e3e3e3, #c0c0c0);
+	}
+	75% {
+		background-image: radial-gradient(75% 50%, circle, #e3e3e3, #c0c0c0);
+		background-image: -o-radial-gradient(75% 50%, circle, #e3e3e3, #c0c0c0);
+		background-image: -moz-radial-gradient(75% 50%, circle, #e3e3e3, #c0c0c0);
+		background-image: -webkit-radial-gradient(75% 50%, circle, #e3e3e3, #c0c0c0);
+	}
+	to {
+		background-image: radial-gradient(95% 50%, circle, #e3e3e3, #c0c0c0);
+		background-image: -o-radial-gradient(95% 50%, circle, #e3e3e3, #c0c0c0);
+		background-image: -moz-radial-gradient(95% 50%, circle, #e3e3e3, #c0c0c0);
+		background-image: -webkit-radial-gradient(95% 50%, circle, #e3e3e3, #c0c0c0);
+	}
+}
+
+@keyframes shiningAnimationGold {
+	from {
+		background-image: radial-gradient(5% 50%, circle farthes, #ffec85, #ffd700);
+		background-image: -o-radial-gradient(5% 50%, circle, #ffec85, #ffd700);
+		background-image: -moz-radial-gradient(5% 50%, circle, #ffec85, #ffd700);
+		background-image: -webkit-radial-gradient(5% 50%, circle, #ffec85, #ffd700);
+	}
+	25% {
+		background-image: radial-gradient(25% 50%, circle, #ffec85, #ffd700);
+		background-image: -o-radial-gradient(25% 50%, circle, #ffec85, #ffd700);
+		background-image: -moz-radial-gradient(25% 50%, circle, #ffec85, #ffd700);
+		background-image: -webkit-radial-gradient(25% 50%, circle, #ffec85, #ffd700);
+	}
+	50% {
+		background-image: radial-gradient(50% 50%, circle, #ffec85, #ffd700);
+		background-image: -o-radial-gradient(50% 50%, circle, #ffec85, #ffd700);
+		background-image: -moz-radial-gradient(50% 50%, circle, #ffec85, #ffd700);
+		background-image: -webkit-radial-gradient(50% 50%, circle, #ffec85, #ffd700);
+	}
+	75% {
+		background-image: radial-gradient(75% 50%, circle, #ffec85, #ffd700);
+		background-image: -o-radial-gradient(75% 50%, circle, #ffec85, #ffd700);
+		background-image: -moz-radial-gradient(75% 50%, circle, #ffec85, #ffd700);
+		background-image: -webkit-radial-gradient(75% 50%, circle, #ffec85, #ffd700);
+	}
+	to {
+		background-image: radial-gradient(95% 50%, circle, #ffec85, #ffd700);
+		background-image: -o-radial-gradient(95% 50%, circle, #ffec85, #ffd700);
+		background-image: -moz-radial-gradient(95% 50%, circle, #ffec85, #ffd700);
+		background-image: -webkit-radial-gradient(95% 50%, circle, #ffec85, #ffd700);
+	}
+}
